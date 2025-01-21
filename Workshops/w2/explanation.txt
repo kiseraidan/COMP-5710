@@ -1,0 +1,78 @@
+Author: Aidan Kiser
+Version: 13 September 2024
+
+**Note**
+I only included the testcases for the multiply and the divide methods to save
+space. I ommitted the addition and subtration testcases to save space.
+
+Examples of testcase failures:
+============================================================= test session starts =============================================================
+platform darwin -- Python 3.11.7, pytest-8.3.3, pluggy-1.5.0
+rootdir: /Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w2/Completed
+collected 5 items
+
+test.py FFFFF                                                                                                                           [100%]
+
+================================================================== FAILURES ===================================================================
+______________________________________________________ TestMultiplication.testMultiply1 _______________________________________________________
+
+self = <test.TestMultiplication testMethod=testMultiply1>
+
+    def testMultiply1(self):
+>       self.assertEqual(25, source.performMutiply(5, 5), "Error in multiplication.")
+E       AttributeError: module 'source' has no attribute 'performMutiply'
+
+test.py:25: AttributeError
+______________________________________________________ TestMultiplication.testMultiply2 _______________________________________________________
+
+self = <test.TestMultiplication testMethod=testMultiply2>
+
+    def testMultiply2(self):
+>       self.assertEqual(24, source.performMutiply(6, 4), "Error in multiplication.")
+E       AttributeError: module 'source' has no attribute 'performMutiply'
+
+test.py:28: AttributeError
+__________________________________________________________ TestDivision.testDivide1 ___________________________________________________________
+
+self = <test.TestDivision testMethod=testDivide1>
+
+    def testDivide1(self):
+>       self.assertEqual(5, source.performDivide(25, 5), "Error in division.")
+E       AttributeError: module 'source' has no attribute 'performDivide'
+
+test.py:32: AttributeError
+__________________________________________________________ TestDivision.testDivide2 ___________________________________________________________
+
+self = <test.TestDivision testMethod=testDivide2>
+
+    def testDivide2(self):
+>       self.assertEqual(4, source.performDivide(24, 6), "Error in division.")
+E       AttributeError: module 'source' has no attribute 'performDivide'
+
+test.py:35: AttributeError
+__________________________________________________________ TestDivision.testDivide3 ___________________________________________________________
+
+self = <test.TestDivision testMethod=testDivide3>
+
+    def testDivide3(self):
+>       self.assertEqual("Error: Division by zero is not allowed.", source.performDivide(100, 0), "Error in division.")
+E       AttributeError: module 'source' has no attribute 'performDivide'
+
+test.py:38: AttributeError
+=========================================================== short test summary info ===========================================================
+FAILED test.py::TestMultiplication::testMultiply1 - AttributeError: module 'source' has no attribute 'performMutiply'
+FAILED test.py::TestMultiplication::testMultiply2 - AttributeError: module 'source' has no attribute 'performMutiply'
+FAILED test.py::TestDivision::testDivide1 - AttributeError: module 'source' has no attribute 'performDivide'
+FAILED test.py::TestDivision::testDivide2 - AttributeError: module 'source' has no attribute 'performDivide'
+FAILED test.py::TestDivision::testDivide3 - AttributeError: module 'source' has no attribute 'performDivide'
+============================================================== 5 failed in 0.01s ==============================================================
+
+Examples of testcase successes:
+============================================================= test session starts =============================================================
+platform darwin -- Python 3.11.7, pytest-8.3.3, pluggy-1.5.0
+rootdir: /Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w2/Completed
+collected 5 items
+
+test.py .....                                                                                                                           [100%]
+
+============================================================== 5 passed in 0.00s ==============================================================
