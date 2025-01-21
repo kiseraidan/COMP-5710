@@ -1,0 +1,106 @@
+Author: Aidan Kiser
+Version: 12 September 2024
+
+Code Objective:
+* It takes an integer (value) as an argument. 
+* Check for multiples of 3: If value is a multiple of 3 (using the isMultiple
+helper function, which isn't shown but presumably checks divisibility), it
+returns the string "Fizz".
+* Check for multiples of 5: If value is a multiple of 5, it returns the string
+"Buzz".
+* Default case: If the number is neither a multiple of 3 nor 5, it returns the
+number itself as a string.
+Note: If the number is a 15 or a multiple of 15 fizzBuzz() will return 'Fizz'
+because that is what comes first.
+
+Potential Code Improvements:
+1. FizzBuzz for multiples of both 3 and 5: The fizzBuzz function in the
+source.py file does not handle the case where the input is a multiple of both 3
+and 5, which is a typical feature of the FizzBuzz problem. For instance, if the
+input is 15, it should return "FizzBuzz".
+2. Code Duplication: In the test file (test.py), there is a pattern of repeated
+code in the unit tests. All the test functions are essentially calling the same
+checkFizzBuzz function with different inputs and expected values. This could be
+consolidated using a parameterized test, which makes the code more concise and
+easier to extend.
+3. Error Handling and Input Validation: The fizzBuzz function does not include
+any input validation. You could consider adding checks to ensure that value is
+an integer and raise a meaningful error if not. This would make the function
+more robust.
+4. Use of Python built-in functions: The isMultiple function is straightforward
+and works fine, but it could be replaced by a simple inline check using the
+modulus operator (%) directly in the fizzBuzz function, thus avoiding the need
+for a separate function.
+5. Docstring improvements: The existing docstrings are helpful, but for
+checkFizzBuzz, it might be better to provide more context about what the
+function is checking for and how it behaves in the context of a unit test.
+
+Output of the code for the inputs [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]:
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+Fizz
+
+10 Potential LLMs for code Improvement:
+1. Codex (by OpenAI) - Specifically trained for code-related tasks, Codex is the
+model that powers GitHub Copilot. It is particularly strong in generating, 
+completing, and understanding code.
+2. CodeT5 - A variant of the T5 model, CodeT5 is fine-tuned on large code
+datasets to perform well in code summarization, generation, and translation
+tasks.
+3. AlphaCode (by DeepMind) - Developed by DeepMind, AlphaCode is designed for
+solving competitive programming problems, providing solutions similar to those
+written by human developers.
+4. PolyCoder - A code generation model that supports multiple programming
+languages, trained on a wide variety of code data from open-source
+repositories.
+5. GPT-NeoX - An open-source variant of GPT, built by EleutherAI, which can be
+fine-tuned on code data for specific programming language tasks or general code
+comprehension.
+6. CoTexT (by Salesforce) - This model specializes in code generation and
+understanding tasks. CoTexT is known for its ability to handle a wide range of
+programming tasks, from code summarization to bug detection.
+7. GraphCodeBERT - A variation of BERT trained specifically for code, this
+model incorporates both the textual and structural representations of code,
+making it useful for tasks like code-to-code translation and defect detection.
+8. CodeBERT - A transformer model pre-trained on large corpora of code, useful
+for various code-related tasks such as code search, code completion, and
+documentation generation.
+9. InCoder (by Meta AI) - A generative model that can both autocomplete code
+and generate code from scratch. It is designed to assist developers by
+understanding the context of partial code.
+10. CodeParrot (by Hugging Face) - An open-source model trained specifically
+for Python code generation. CodeParrot can provide useful insights into
+Python-specific code issues, refactoring, and assessment.
+
+Example of Test Code Failures:
+=========================================================== short test summary info ===========================================================
+FAILED test.py::test_returns1With1PassedIn - AssertionError: Expected 1, but got None for input: 1
+FAILED test.py::test_returns2With2PassedIn - AssertionError: Expected 2, but got None for input: 2
+FAILED test.py::test_returnsFizzWith3PassedIn - AssertionError: Expected Fizz, but got None for input: 3
+FAILED test.py::test_returnsBuzzWith5PassedIn - AssertionError: Expected Buzz, but got None for input: 5
+FAILED test.py::test_returnsFizzWith6PassedIn - AssertionError: Expected Fizz, but got None for input: 6
+FAILED test.py::test_returnsBuzzWith10PassedIn - AssertionError: Expected Buzz, but got None for input: 10
+FAILED test.py::test_returnsFizzBuzzWith15PassedIn - AssertionError: Expected Fizz, but got None for input: 15
+============================================================== 7 failed in 0.02s ==============================================================
+
+Example of Test Code Successes:
+============================================================= test session starts =============================================================
+platform darwin -- Python 3.11.7, pytest-8.3.3, pluggy-1.5.0
+rootdir: /Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w1/Completed
+collected 7 items
+
+test.py .......                                                                                                                         [100%]
+
+============================================================== 7 passed in 0.00s ==============================================================
