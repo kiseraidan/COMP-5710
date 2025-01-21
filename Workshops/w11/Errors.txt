@@ -1,0 +1,64 @@
+aidankiser@Mac w11 % Python3 w11.py
+Traceback (most recent call last):
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 75, in simpleFuzzer
+    fuzzValues(val1, val2)
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 35, in fuzzValues
+    res = divide(val1, val2)
+          ^^^^^^^^^^^^^^^^^^
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 25, in divide
+    raise ValueError("Can't divide by 0 homie")
+ValueError: Can't divide by 0 homie
+Traceback (most recent call last):
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 75, in simpleFuzzer
+    fuzzValues(val1, val2)
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 30, in fuzzValues
+    raise TypeError("That input type won't work homie")
+TypeError: That input type won't work homie
+Traceback (most recent call last):
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 75, in simpleFuzzer
+    fuzzValues(val1, val2)
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 33, in fuzzValues
+    raise OverflowError("Overflow or underflow error fam")
+OverflowError: Overflow or underflow error fam
+Traceback (most recent call last):
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 75, in simpleFuzzer
+    fuzzValues(val1, val2)
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 37, in fuzzValues
+    raise ArithmeticError("Precision was lost, man")
+ArithmeticError: Precision was lost, man
+Traceback (most recent call last):
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 75, in simpleFuzzer
+    fuzzValues(val1, val2)
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 37, in fuzzValues
+    raise ArithmeticError("Precision was lost, man")
+ArithmeticError: Precision was lost, man
+Traceback (most recent call last):
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 75, in simpleFuzzer
+    fuzzValues(val1, val2)
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 30, in fuzzValues
+    raise TypeError("That input type won't work homie")
+TypeError: That input type won't work homie
+Traceback (most recent call last):
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 75, in simpleFuzzer
+    fuzzValues(val1, val2)
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 30, in fuzzValues
+    raise TypeError("That input type won't work homie")
+TypeError: That input type won't work homie
+Traceback (most recent call last):
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 75, in simpleFuzzer
+    fuzzValues(val1, val2)
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 30, in fuzzValues
+    raise TypeError("That input type won't work homie")
+TypeError: That input type won't work homie
+Traceback (most recent call last):
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 75, in simpleFuzzer
+    fuzzValues(val1, val2)
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 30, in fuzzValues
+    raise TypeError("That input type won't work homie")
+TypeError: That input type won't work homie
+Traceback (most recent call last):
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 75, in simpleFuzzer
+    fuzzValues(val1, val2)
+  File "/Users/aidankiser/Documents/Fall 2024 Classes/Software Quality Assurance/Workshops/w11/w11.py", line 30, in fuzzValues
+    raise TypeError("That input type won't work homie")
+TypeError: That input type won't work homie
